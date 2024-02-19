@@ -9,6 +9,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 10vh;
+}
+
+li {
+    border-right: 3px solid white;
+}
+
+li:last-child {
+    border-right: none;
 }
 
 nav a {
@@ -16,6 +25,10 @@ nav a {
     padding: 8px;
     background-color: #2D8FC5;
     text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #36B7FF;
 }
 
 nav li {
@@ -26,6 +39,22 @@ nav ul {
     list-style-type: none;
     overflow: hidden;
     background-color: #2D8FC5;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 0;
+}
+
+nav {
+    padding-right: 40px;
+}
+
+.image-logo {
+    width: 23.6vh;
+}
+
+.image-main {
+    height: 90vh;
+    width: 100%;
 }
 
 .main-title {
@@ -34,6 +63,13 @@ nav ul {
     padding-right: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    z-index: 2;
 }
 
 .primary-background {
