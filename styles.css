@@ -65,11 +65,28 @@ nav {
     padding-bottom: 10px;
 }
 
-.overlay {
+.title-main {
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+.overlay-logo {
     position: absolute;
     top: 10%;
     left: 0%;
     z-index: 2;
+}
+
+.overlay-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
 }
 
 .primary-background {
