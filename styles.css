@@ -86,14 +86,24 @@ div.container-large-left {
     width: 60vw;
     height: 100%;
     float: left;
-    padding: 0;
+}
+
+div.container-mid-left {
+    width: 49vw;
+    height: 100%;
+    float: left;
+}
+
+div.container-mid-right {
+    width: 49vw;
+    height: 100%;
+    float: right;
 }
 
 div.container-small-right {
     width: 38vw;
     height: 100%;
     float: right;
-    padding: 0;
 }
 
 h2.section-title {
