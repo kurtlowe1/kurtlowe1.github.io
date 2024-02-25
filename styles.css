@@ -82,28 +82,16 @@ div.section-header-sub {
     width: 15vw;
 }
 
-div.container-large-left {
+div.container-small {
+    width: 40vw;
+}
+
+div.container-medium {
+    width: 50vw;
+}
+
+div.container-large {
     width: 60vw;
-    height: 100%;
-    float: left;
-}
-
-div.container-mid-left {
-    width: 49vw;
-    height: 100%;
-    float: left;
-}
-
-div.container-mid-right {
-    width: 49vw;
-    height: 100%;
-    float: right;
-}
-
-div.container-small-right {
-    width: 38vw;
-    height: 100%;
-    float: right;
 }
 
 h2.section-title {
