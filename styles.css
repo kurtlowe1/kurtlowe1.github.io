@@ -72,33 +72,32 @@ p, .action-button {
 
 div.section-main {
     height: 90vh;
+    min-height: 720px;
 }
 
 div.section-sub {
     height: 50vh;
+    min-height: 400px;
 }
 
 div.section-header-sub {
     width: 15vw;
 }
 
-div.container-small {
+.container-small {
     width: 40vw;
 }
 
-div.container-medium {
-    width: 50vw;
-}
-
-div.container-large {
+.container-large {
     width: 60vw;
 }
 
 h2.section-title {
-    display: inline-block;
+    position: relative;
+    top: 5%;
+    left: 5%;
     padding: 8px;
-    margin-left: 80px;
-    margin-top: 20px;
+    display: inline-block;
 }
 
 div.overlay-top-left {
@@ -137,9 +136,13 @@ div a:hover {
     padding: 8px;
 }
 
+td {
+    text-align: start;
+}
+
 img.bg {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: inline;
+    display: block;
 }
