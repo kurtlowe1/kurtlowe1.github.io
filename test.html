@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Code Crafters</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap">
+
+    <style>
+        :root {
+            --primary-color: #36B7FF;
+            --secondary-color: #2D8FC5;
+            --text-md: 1.5rem;
+            --text-sm: 1rem;
+            --mg-md: 0.5rem;
+            --mg-sm: 0.2rem;
+        }
+        
+        * {
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-color);
+        }
+
+        h2 {
+            background-color: var(--secondary-color);
+            display: inline-block;
+            font-size: var(--text-md);
+            margin: var(--mg-md);
+        }
+
+        p {
+            font-size: var(--text-sm);
+            margin: var(--mg-sm);
+        }
+
+        div a {
+            font-size: var(--text-sm);
+            text-decoration: none;
+            margin: var(--mg-sm);
+        }
+
+        .section-sub-grid {
+            height: 50vh;
+            display: grid;
+            grid-template-columns: 60fr 40fr;
+        }
+
+        .section-sub {
+            height: 50vh;
+        }
+
+        img.bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        div.bg-image {
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        @media all and (max-width: 1050px) and (min-width: 0px) {
+            :root {
+                --text-md: 1rem;
+                --text-sm: 0.75rem;
+                --mg-md: 0.5rem;
+                --mg-sm: 0.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section-sub-grid">
+        <div>
+            <h2 class="section-title bg-secondary">About Me</h2>
+            <br><br>
+            <p>Hi, I'm Kurt from Code Crafters!</p>
+            <br>
+            <p>I am an 18 year old from the UK, who loves everything game development and coding. I created Code Crafters as a network of different resources to help people learn programming for the first time.</p>
+            <br>
+            <a href="./about">Read More ></a>
+        </div>
+        <div class="bg-image" style="background-image: url(Images/Home/Selfie.png);">
+        </div>
+    </div>
+
+    <div class="section-sub">
+        <img src="Images/Home/ForestBackground.png" class="bg">
+    </div>
+
+</body>
+
+</html>
