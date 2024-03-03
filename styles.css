@@ -1,10 +1,12 @@
 :root {
     --primary-color: #36B7FF;
     --secondary-color: #2D8FC5;
-    --text-md: 1.5rem;
+    --text-md: 2rem;
     --text-sm: 1rem;
-    --mg-md: 0.5rem;
-    --mg-sm: 0.2rem;
+    --mg-l: 5rem;
+    --mg-md: 2rem;
+    --mg-sm: 0.75rem;
+    --pg-md: 0.25rem;
 }
 
 * {
@@ -18,38 +20,44 @@ body {
     background-color: var(--primary-color);
 }
 
-h2 {
+div.section-sub {
+    height: 50vh;
+}
+
+div.section-sub a {
+    font-size: var(--text-sm);
+    text-decoration: none;
+    margin-left: var(--mg-md);
+}
+
+div.section-sub a:hover {
+    background-color: var(--secondary-color);
+    padding: var(--pg-md);
+}
+
+div.section-sub h2 {
     background-color: var(--secondary-color);
     display: inline-block;
     font-size: var(--text-md);
-    margin: var(--mg-md);
+    margin-top: var(--mg-sm);
+    margin-left: var(--mg-md);
+    padding: var(--pg-md);
 }
 
-p {
+div.section-sub p {
     font-size: var(--text-sm);
-    margin: var(--mg-sm);
+    margin-left: var(--mg-l);
+    margin-right: var(--mg-md);
 }
 
-div a {
-    font-size: var(--text-sm);
-    text-decoration: none;
-    margin: var(--mg-sm);
+div.grid {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
 }
 
-.section-sub-grid {
-    height: 50vh;
+div.grid-left {
     display: grid;
     grid-template-columns: 60fr 40fr;
-}
-
-.section-sub {
-    height: 50vh;
-}
-
-img.bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 div.bg-image {
