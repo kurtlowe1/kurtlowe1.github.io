@@ -28,6 +28,8 @@ div.section-sub a {
     font-size: var(--text-sm);
     text-decoration: none;
     margin-left: var(--mg-md);
+    position: absolute;
+    bottom: 5%;
 }
 
 div.section-sub a:hover {
@@ -40,23 +42,27 @@ div.section-sub h2 {
     display: inline-block;
     font-size: var(--text-md);
     margin-top: var(--mg-sm);
+    margin-bottom: var(--mg-md);
     margin-left: var(--mg-md);
     padding: var(--pg-md);
 }
 
 div.section-sub p {
     font-size: var(--text-sm);
+    margin-bottom: var(--mg-sm);
     margin-left: var(--mg-l);
     margin-right: var(--mg-md);
 }
 
 div.grid {
     display: grid;
+    position: relative;
     grid-template-columns: 50fr 50fr;
 }
 
 div.grid-left {
     display: grid;
+    position: relative;
     grid-template-columns: 60fr 40fr;
 }
 
@@ -65,11 +71,38 @@ div.bg-image {
     background-position: 50% 50%;
 }
 
-@media all and (max-width: 1050px) and (min-width: 0px) {
+@media all and (max-width: 1050px) and (min-width: 780px) {
+    /* Decreasing by factor of 0.125 */
     :root {
-        --text-md: 1rem;
-        --text-sm: 0.75rem;
-        --mg-md: 0.5rem;
-        --mg-sm: 0.2rem;
+        --text-md: 1.75rem;
+        --text-sm: 0.875rem;
+        --mg-l: 4.375rem;
+        --mg-md: 1.75rem;
+        --mg-sm: 0.65625rem;
+        --pg-md: 0.21875rem;
+    }
+}
+
+@media all and (max-width: 780px) and (min-width: 610px) {
+    /* Decreasing by factor of 0.125 */
+    :root {
+        --text-md: 1.53125rem;
+        --text-sm: 0.765625rem;
+        --mg-l: 3.828125rem;
+        --mg-md: 1.53125rem;
+        --mg-sm: 0.57421875rem;
+        --pg-md: 0.19140625rem;
+    }
+}
+
+@media all and (max-width: 610px) and (min-width: 0px) {
+    /* Decreasing by factor of 0.125 */
+    :root {
+        --text-md: 1.33984375rem;
+        --text-sm: 0.669921875rem;
+        --mg-l: 3.349609375rem;
+        --mg-md: 1.33984375rem;
+        --mg-sm: 0.5024414063rem;
+        --pg-md: 0.1674804688rem;
     }
 }
